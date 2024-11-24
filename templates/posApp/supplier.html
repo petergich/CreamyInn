@@ -1,0 +1,128 @@
+{% extends "posApp/base.html" %} {% block pageContent %}
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0"><i class="fas fa-user"></i> Customers</h4>
+            <div class="text-start">
+                <button class="btn btn-success bg-gradient btn-sm" id="create_new"><i class="mdi mdi-plus"></i><span> Add New</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card">
+        <div class="table-responsive">
+            <table id="dataTable"class="table table-bordered">
+                <colgroup>
+                    <col width="5%">
+                    <col width="5%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="25%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                </colgroup>
+                <thead class="table-primary">
+                    <tr>
+                        <th class="text-center py-1"><i class="fas fa-tag"></i> CODE</th>
+                        <th class="text-center py-1">ID</th>
+                        <th class="text-center py-1">Category</th>
+                        <th class="text-center py-1"><i class="fas fa-shopping-cart"></i> Product</th>
+                        <th class="text-center py-1">UOM</th>
+                        <th class="text-center py-1">Description</th>
+                        <th class="text-center py-1">Reorder Level</th>
+                        <th class="text-center py-1">Quantity</th>
+                        <th class="text-center py-1">Status</th>
+                        <th class="text-center py-1">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for customer in customers %}
+                    <tr>
+                        <td class="px-2 py-1 text-center"><i class="fas fa-barcode"></i> {{ customer.code }}</td>
+                        <td class="px-2 py-1 text-center">{{ customer.id }}</td>
+                        <td class="px-2 py-1 text-start">{{ customer.category_id }}</td>
+                        <td class="px-2 py-1 text-start"><i class="fas fa-shopping-cart"></i> {{ customer.name }}</td>
+                        <td class="px-2 py-1 text-start">{{ customer.uom.name }}</td>
+                        <td class="px-2 py-1 text-start">{{ customer.description }}</td>
+                        <td class="px-2 py-1 text-center">{{ customer.reorder}}</td>
+                        <td class="px-2 py-1 text-center">
+                            {% if customer.quantity < pcustomerreorder %}
+                                {{ customer.quantity }} <span class="text-danger"><i class="fas fa-exclamation-triangle"></i></span>
+                            {% else %}
+                                {{ customer.quantity }}
+                            {% endif %}
+                        </td>
+                        <td class="px-2 py-1 text-center">
+                            {% if customer.status == 1 %}
+                            <span class="badge bg-primary rounded-pill px-3">Active</span> {% else %}
+                            <span class="badge bg-secondary rounded-pill px-3">Inactive</span> {% endif %}
+                        </td>
+                        <td class="px-2 py-1 text-center">
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--light mdc-ripple-upgraded edit-data" type="button" data-id="{{ product.pk }}" title="Edit">
+                                <i class="material-icons mdc-button__icon">edit</i>
+                            </button>
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--danger mdc-ripple-upgraded delete-data" type="button" data-id="{{ product.pk }}" title="Delete">
+                                <i class="material-icons mdc-button__icon">deleteoutline</i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock pageContent %} {% block ScriptBlock %}
+<script>
+    $(function() {
+        $('#create_new').click(function() {
+            uni_modal("Add New Customer", "{% url 'manage_customers-page' %}")
+        })
+        $('.edit-data').click(function() {
+            uni_modal("Edit Customer", "{% url 'manage_customers-page' %}?id=" + $(this).attr('data-id'))
+        })
+        $('.delete-data').click(function() {
+            _conf("Are you sure to delete this customer?", "delete_customer", [$(this).attr('data-id')])
+        })
+
+        $('#uni_modal').on('shown.bs.modal', function() {
+            $('#category_id').select2({
+                placeholder: "Please Select Category Here",
+                width: '100%',
+                dropdownParent: $('#uni_modal')
+            })
+        })
+    })
+
+    function delete_product($id) {
+        start_loader();
+        $.ajax({
+            headers: {
+                "X-CSRFToken": '{{csrf_token}}'
+            },
+            url: "{% url 'delete-customer' %}",
+            method: "POST",
+            data: {
+                id: $id
+            },
+            dataType: "json",
+            error: err => {
+                console.log(err)
+                alert_toast("An error occured.", 'error');
+                end_loader();
+            },
+            success: function(resp) {
+                if (typeof resp == 'object' && resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occured.", 'error');
+                    end_loader();
+                }
+            }
+        })
+    }
+</script>
+{% endblock ScriptBlock %}

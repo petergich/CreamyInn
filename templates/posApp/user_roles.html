@@ -1,0 +1,200 @@
+{% extends "posApp/base.html" %}
+{% block pageContent %}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0 text-primary"><span style="color:black"><i class="fas fa-user"></i>User:</span> {{user.name}}</h4>
+        </div>
+    </div>
+</div>
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card bg-dark mb-4">
+        <div class="table-responsive">
+            <table id="dataTable" class="table table-bordered">
+                <colgroup>
+                    <col width="5%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="30%">
+                    <col width="10%">
+                </colgroup>
+                <thead class="table-primary">
+                    <tr>
+                        <th class="text-center py-1">ID</th>
+                        <th class="text-center py-1"><i class="fas fa-user"></i> UName</th>
+                        <th class="text-center py-1"><i class="fas fa-lock"></i> Username</th>
+                        <th class="text-center py-1"><i class="fas fa-user-tag"></i> Group</th>
+                        <th class="text-center py-1"><i class="fas fa-phone-alt"></i> Phone</th>
+                        <th class="text-center py-1">Status</th>
+                        <th class="text-center py-1">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td class="text-center">{{ user.id }}</td>
+                        <td class="text-start"><i class="fas fa-user"></i> {{ user.name }}</td>
+                        <td class="text-start"><i class="fas fa-lock"></i> {{ user.username }}</td>
+                        <td class="text-start">
+                        {% if user.group %}
+                        {{ user.group }}
+                        {% else %}
+                        <i>NULL</i>
+                        {% endif%}
+                        </td> <!-- Adjusted to show user group -->
+                        <td class="text-start">{{ user.phone }}</td>
+                        <td class="text-start">{{ user.is_active|yesno:"Active,Inactive" }}
+                        </td>
+                        <td class="text-center">
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--light mdc-ripple-upgraded edit-data" type="button" data-id="{{ user.id }}" title="Edit">
+                                <i class="material-icons mdc-button__icon">edit</i>
+                            </button>
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--danger mdc-ripple-upgraded delete-data" type="button" data-id="{{ user.id }}" title="Delete">
+                                <i class="material-icons mdc-button__icon">delete_outline</i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card bg-light mb-4">
+    <h2 class="text-center">User Roles</h2>
+        <div style="display:flex;flex-direction:row;"class="row table-responsive">
+           {% for category in rolecategories %}
+            <div style="height:max-content;"class="col-md-3 col-sm-6 mb-4">  <!-- Adjust the column width based on screen size -->
+            <div class="border border-primary p-2">
+                <h4 class="text-left">{{ category.name }}</h4>
+                <div class="rounded border-primary">
+                    {% for role in roles %}
+                    {% if role.category == category %}
+                    <div class="form-check">
+                        {% if role in user.roles.all%}
+                        <input checked class="form-check-input role-checkbox" type="checkbox" id="role_{{ role.id }}" name="roles"value="{{role.id}}">
+                        {% else %}
+                        <input class="form-check-input role-checkbox" type="checkbox" id="role_{{ role.id }}" name="roles"value="{{role.id}}">
+                        {% endif%}
+                        <label class="form-check-label" for="role_{{ role.id }}">{{ role.name }}</label>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+        <div class="text-center align-items-center">
+        <button id="submitRoles"class="btn btn-primary ">Update</button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock pageContent %}
+
+{% block ScriptBlock %}
+<script>
+$('.edit-data').click(function() {
+    uni_modal("Edit User", "{% url 'manage_users-page' %}?id=" + $(this).data('id'));
+});
+
+// Delete customer functionality
+$('.delete-data').click(function() {
+    _conf("Are you sure to delete this cuser?", "delete_user", [$(this).data('id')]);
+});
+document.getElementById('submitRoles').addEventListener('click', function () {
+     const user = "{{user.id}}";
+     const selectedRoles = Array.from(document.querySelectorAll('.role-checkbox:checked')).map(checkbox => checkbox.value);
+     
+     if (selectedRoles.length > 0) {
+         const data = { roles: selectedRoles, user: user};
+         const csrfToken = '{{ csrf_token }}';
+
+         fetch("{% url 'user_roles' %}", { // Corrected: Removed the extra comma after URL
+             method: 'POST',
+             headers: {
+                 'Content-Type': 'application/json',
+                 'X-CSRFToken': csrfToken
+             },
+             body: JSON.stringify(data)
+         })
+         .then(response => response.json())
+         .then(data => {
+             alert('Roles updated successfully.');
+             console.log(data);
+         })
+         .catch((error) => {
+             console.error('Error:', error);
+         });
+     } else {
+         alert('No roles selected.');
+     }
+ });
+
+    $(document).ready(function() {
+        
+        // Edit group functionality
+        $('.edit-data').click(function() {
+            uni_modal("Edit user", "{% url 'manage_users-page' %}?id=" + $(this).data('id'));
+        });
+
+        // Delete group functionality
+        $('.delete-data').click(function() {
+            _conf("Are you sure to delete this User?", "delete_user", [$(this).data('id')]);
+        });
+
+    });
+    // Delete group function
+    function delete_group(id) {
+        start_loader();
+        $.ajax({
+            headers: { "X-CSRFToken": '{{ csrf_token }}' },
+            url: "{% url 'delete-user' %}",
+            method: "POST",
+            data: { id: id },
+            dataType: "json",
+            success: function(resp) {
+                if (resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occurred.", 'error');
+                    end_loader();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                alert_toast("An error occurred.", 'error');
+                end_loader();
+            }
+        });
+    }
+    // Delete customer function
+    function delete_user(id) {
+        start_loader();
+        $.ajax({
+            headers: { "X-CSRFToken": '{{ csrf_token }}' },
+            url: "{% url 'delete-user' %}",
+            method: "POST",
+            data: { id: id },
+            dataType: "json",
+            success: function(resp) {
+                if (resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occurred.", 'error');
+                    end_loader();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                alert_toast("An error occurred.", 'error');
+                end_loader();
+            }
+        });
+    }
+</script>
+{% endblock ScriptBlock %}

@@ -1,0 +1,127 @@
+{% extends "posApp/base.html" %}
+{% block pageContent %}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0"><i class="fas fa-user"></i> Users</h4>
+            <div class="text-start">
+                <button class="btn btn-success bg-gradient btn-sm" id="create_new">
+                    <i class="mdi mdi-plus"></i><span> Add New</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card">
+        <div class="table-responsive">
+            <table id="dataTable" class="table table-bordered">
+                <colgroup>
+                    <col width="5%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="25%">
+                    <col width="10%">
+                    <col width="10%">
+                </colgroup>
+                <thead class="table-primary">
+                    <tr>
+                        <th class="text-center py-1">ID</th>
+                        <th class="text-center py-1"><i class="fas fa-user"></i> Name</th>
+                        <th class="text-center py-1"><i class="fas fa-lock"></i> Username</th>
+                        <th class="text-center py-1"><i class="fas fa-user-tag"></i> Group</th>
+                        <th class="text-center py-1"><i class="fas fa-phone-alt"></i> Phone</th>
+                        <th class="text-center py-1">Status</th>
+                        <th class="text-center py-1">Roles</th>
+                        <th class="text-center py-1">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td class="text-center">{{ user.id }}</td>
+                        <td class="text-start"><i class="fas fa-user"></i> {{ user.name }}</td>
+                        <td class="text-start"><i class="fas fa-lock"></i> {{ user.username }}</td>
+                        <td class="text-start">
+                        {% if user.group %}
+                        {{ user.group.name }}
+                        {% else %}
+                        <i>NULL</i>
+                        {% endif%}
+                        </td> <!-- Adjusted to show user group -->
+                        <td class="text-start">{{ user.phone }}</td>
+                        <td class="text-start">{{ user.is_active|yesno:"Active,Inactive" }}
+                        
+                        </td>
+                        <td><button class="btn btn-primary btn-sm roles" type="button" data-id="{{ user.id }}" title="roles">
+                                    Roles
+                        </button>
+                        </td>
+                        <td class="text-center">
+                            
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--light mdc-ripple-upgraded edit-data" type="button" data-id="{{ user.id }}" title="Edit">
+                                <i class="material-icons mdc-button__icon">edit</i>
+                            </button>
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--danger mdc-ripple-upgraded delete-data" type="button" data-id="{{ user.id }}" title="Delete">
+                                <i class="material-icons mdc-button__icon">delete_outline</i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock pageContent %}
+{% block ScriptBlock %}
+<script>
+    $(document).ready(function() {
+        // Open modal to create new customer
+        $('#create_new').click(function() {
+            uni_modal("Add New User", "{% url 'manage_users-page' %}");
+        });
+
+        // Edit customer functionality
+        $('.edit-data').click(function() {
+            uni_modal("Edit User", "{% url 'manage_users-page' %}?id=" + $(this).data('id'));
+        });
+
+        // Delete customer functionality
+        $('.delete-data').click(function() {
+            _conf("Are you sure to delete this cuser?", "delete_user", [$(this).data('id')]);
+        });
+        $('.roles').click(function() {
+            window.location.href = "{% url 'user_roles'%}?id="+$(this).data('id')
+        });
+
+    });
+
+    // Delete customer function
+    function delete_user(id) {
+        start_loader();
+        $.ajax({
+            headers: { "X-CSRFToken": '{{ csrf_token }}' },
+            url: "{% url 'delete-user' %}",
+            method: "POST",
+            data: { id: id },
+            dataType: "json",
+            success: function(resp) {
+                if (resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occurred.", 'error');
+                    end_loader();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                alert_toast("An error occurred.", 'error');
+                end_loader();
+            }
+        });
+    }
+</script>
+{% endblock ScriptBlock %}

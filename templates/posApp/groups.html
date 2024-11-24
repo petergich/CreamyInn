@@ -1,0 +1,111 @@
+{% extends "posApp/base.html" %}
+{% block pageContent %}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0 text-primary"><i class="fas fa-users"></i> User Groups</h4>
+            <div class="text-start">
+                <button class="btn btn-success bg-gradient btn-sm" id="create_new">
+                    <i class="mdi mdi-plus"></i><span> Add New</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card bg-info bg-gradient">
+        <div class="table-responsive">
+            <table id="dataTable" class="table table-secondary">
+                <colgroup>
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="30%">
+                    <col width="20%">
+                    <col width="15%">
+                </colgroup>
+                <thead class="table-primary">
+                    <tr>
+                        <th class="text-center py-1"><i class="fas fa-id-badge"></i> Group ID</th>
+                        <th class="text-center py-1"><i class="fas fa-users"></i> Name</th>
+                        <th class="text-center py-1"><i class="fas fa-info-circle"></i> Description</th>
+                        <th class="text-center py-1"><i class="fas fa-cog"></i> Manage</th>
+                        <th class="text-center py-1"><i class="fas fa-tools"></i> Action</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    {% for group in groups %}
+                    <tr>
+                        <td class="text-center">{{ group.id }}</td>
+                        <td class="text-start"><i class="fas fa-users"></i> {{ group.name }}</td>
+                        <td class="text-start">{{ group.description }}</td>
+                        <td class="text-center"><button onclick="managegroup({{group.id}})"class="btn btn-primary"><i class="fas fa-cog"></i> Manage</button></td>
+                        <td class="text-center">
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--light mdc-ripple-upgraded edit-data" type="button" data-id="{{ group.id }}" title="Edit">
+                                <i class="material-icons mdc-button__icon">edit</i>
+                            </button>
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--danger mdc-ripple-upgraded delete-data" type="button" data-id="{{ group.id }}" title="Delete">
+                                <i class="material-icons mdc-button__icon">delete_outline</i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock pageContent %}
+
+{% block ScriptBlock %}
+<script>
+    $(document).ready(function() {
+        
+        // Open modal to create new group
+        $('#create_new').click(function() {
+            uni_modal("Add New Group", "{% url 'manage_groups-page' %}");
+        });
+
+        // Edit group functionality
+        $('.edit-data').click(function() {
+            uni_modal("Edit group", "{% url 'manage_groups-page' %}?id=" + $(this).data('id'));
+        });
+
+        // Delete group functionality
+        $('.delete-data').click(function() {
+            _conf("Are you sure to delete this group?", "delete_group", [$(this).data('id')]);
+        });
+
+    });
+    //open user group configurations
+       function managegroup(id){
+        window.location.href = "{% url 'group_roles'%}?id="+id
+       }
+
+    // Delete group function
+    function delete_group(id) {
+        start_loader();
+        $.ajax({
+            headers: { "X-CSRFToken": '{{ csrf_token }}' },
+            url: "{% url 'delete-group' %}",
+            method: "POST",
+            data: { id: id },
+            dataType: "json",
+            success: function(resp) {
+                if (resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occurred.", 'error');
+                    end_loader();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                alert_toast("An error occurred.", 'error');
+                end_loader();
+            }
+        });
+    }
+</script>
+{% endblock ScriptBlock %}

@@ -1,0 +1,1384 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "isExtraImport": true,
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "isExtraImport": true,
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "RoleCategory",
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "isExtraImport": true,
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "isExtraImport": true,
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "isExtraImport": true,
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "category",
+        "importPath": "unicodedata",
+        "description": "unicodedata",
+        "isExtraImport": true,
+        "detail": "unicodedata",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectView",
+        "importPath": "django.views.generic.base",
+        "description": "django.views.generic.base",
+        "isExtraImport": true,
+        "detail": "django.views.generic.base",
+        "documentation": {}
+    },
+    {
+        "label": "FALSE",
+        "importPath": "pickle",
+        "description": "pickle",
+        "isExtraImport": true,
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "json,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json.",
+        "description": "json.",
+        "detail": "json.",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "pos.asgi",
+        "description": "pos.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "pos.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure--w(dug*va_megpa25w$gmv8o6+f8!fg_*m1^u$)z25pab0hicm'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'posApp.CustomUser'\n# Application definition",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure--w(dug*va_megpa25w$gmv8o6+f8!fg_*m1^u$)z25pab0hicm'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'posApp.CustomUser'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'posApp.CustomUser'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\nAUTH_USER_MODEL = 'posApp.CustomUser'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'posApp.CustomUser'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'posApp.apps.posAppConfig',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'posApp.apps.posAppConfig',\n    'django.contrib.humanize',\n]",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'pos.urls'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "ROOT_URLCONF = 'pos.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\"templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\"templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'pos.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'Africa/Nairobi'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible ",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "TIME_ZONE = 'Africa/Nairobi'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',\n)",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',\n)\n# Default primary key field type",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',\n)\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',\n)\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = '/'\nLOGIN_URL = '/login'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "STATICFILES_DIRS = (\n    # location of your application, should not be public web accessible \n    './static',\n)\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = '/'\nLOGIN_URL = '/login'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nLOGIN_REDIRECT_URL = '/'\nLOGIN_URL = '/login'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGIN_URL = '/login'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "pos.settings",
+        "description": "pos.settings",
+        "peekOfCode": "LOGIN_URL = '/login'",
+        "detail": "pos.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "pos.urls",
+        "description": "pos.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls,name=\"admin-site\"),\n    path('', include('posApp.urls')),\n]",
+        "detail": "pos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "pos.wsgi",
+        "description": "pos.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "pos.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posApp.migrations.0001_initial",
+        "description": "posApp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "posApp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posApp.migrations.0002_credit_code",
+        "description": "posApp.migrations.0002_credit_code",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('posApp', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='credit',\n            name='code',\n            field=models.CharField(default=None, max_length=20, null=True),\n        ),",
+        "detail": "posApp.migrations.0002_credit_code",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posApp.migrations.0003_credit_paid",
+        "description": "posApp.migrations.0003_credit_paid",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('posApp', '0002_credit_code'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='credit',\n            name='paid',\n            field=models.BooleanField(default=False),\n        ),",
+        "detail": "posApp.migrations.0003_credit_paid",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "posApp.migrations.0004_credit_total_amount",
+        "description": "posApp.migrations.0004_credit_total_amount",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('posApp', '0003_credit_paid'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='credit',\n            name='total_amount',\n            field=models.IntegerField(default=0),\n        ),",
+        "detail": "posApp.migrations.0004_credit_total_amount",
+        "documentation": {}
+    },
+    {
+        "label": "posAppConfig",
+        "kind": 6,
+        "importPath": "posApp.apps",
+        "description": "posApp.apps",
+        "peekOfCode": "class posAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'posApp'",
+        "detail": "posApp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "create_roles_and_categories",
+        "kind": 2,
+        "importPath": "posApp.initial_data",
+        "description": "posApp.initial_data",
+        "peekOfCode": "def create_roles_and_categories():\n    print(\"Started Creating Roles and Categories\")\n    # Define categories and their corresponding roles\n    categories_and_roles = {\n        'Sales': [\n            'Make sale below S.P',\n            'Sell on Credit',\n            'Sell below Selling Price',\n            'Delete sales'\n        ],",
+        "detail": "posApp.initial_data",
+        "documentation": {}
+    },
+    {
+        "label": "create_admin_user",
+        "kind": 2,
+        "importPath": "posApp.initial_data",
+        "description": "posApp.initial_data",
+        "peekOfCode": "def create_admin_user():\n    print(\"Started Creating Admin User\")\n    # Check if admin user already exists\n    if not CustomUser.objects.filter(username='admin').exists():\n        # Create superuser with username 'admin' and password 'admin'\n        admin_user = CustomUser.objects.create_superuser(username='admin', password='admin', email='admin@example.com')\n        # Assign all roles to the superuser (assuming roles can be related to users)\n        roles = Role.objects.all()  # Fetch all roles\n        admin_user.roles.set(roles)\n        admin_user.save()",
+        "detail": "posApp.initial_data",
+        "documentation": {}
+    },
+    {
+        "label": "Customer",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Customer(models.Model):\n    name = models.CharField(max_length = 150)\n    phone = models.CharField(max_length = 50,null=True,default=None)\n    email = models.CharField(max_length = 150,null=True,default=None)\n    location = models.CharField(max_length = 150,null=True,default=None)\n    default=models.BooleanField(default=False)\nclass Supplier(models.Model):\n    name = models.CharField(max_length = 150)\n    contact_person = models.CharField(max_length = 150)\n    phone = models.CharField(max_length = 50,null=True,default=None)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Supplier",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Supplier(models.Model):\n    name = models.CharField(max_length = 150)\n    contact_person = models.CharField(max_length = 150)\n    phone = models.CharField(max_length = 50,null=True,default=None)\n    email = models.CharField(max_length = 150,null=True,default=None)\n    location = models.CharField(max_length = 150,null=True,default=None)\nclass Category(models.Model):\n    name = models.TextField()\n    description = models.TextField()\n    status = models.IntegerField(default=1) ",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.TextField()\n    description = models.TextField()\n    status = models.IntegerField(default=1) \n    date_added = models.DateTimeField(default=timezone.now) \n    date_updated = models.DateTimeField(auto_now=True) \n    def __str__(self):\n        return self.name\nclass Uom(models.Model):\n    name = models.CharField(max_length=100)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Uom",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Uom(models.Model):\n    name = models.CharField(max_length=100)\n    shortname = models.CharField(max_length=100)\n    description = models.CharField(max_length=1500)\n    def __str__ (self):\n        return self.name\nclass Products(models.Model):\n    code = models.CharField(max_length=100)\n    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)\n    name = models.TextField()",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Products",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Products(models.Model):\n    code = models.CharField(max_length=100)\n    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)\n    name = models.TextField()\n    description = models.TextField()\n    price = models.FloatField(default=0)\n    reorder = models.IntegerField(default=0)\n    quantity = models.IntegerField(default=0)  # New quantity field\n    status = models.IntegerField(default=1) \n    date_added = models.DateTimeField(default=timezone.now) ",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sales",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Sales(models.Model):\n    code = models.CharField(max_length=100)\n    sub_total = models.FloatField(default=0)\n    grand_total = models.FloatField(default=0)\n    tax_amount = models.FloatField(default=0)\n    tax = models.FloatField(default=0)\n    tendered_amount = models.FloatField(default=0)\n    amount_change = models.FloatField(default=0)\n    customer= models.ForeignKey(Customer,default=None,on_delete=models.SET_NULL,null=True)\n    cash = models.CharField(max_length=100, blank=True, null=True)  # New field for cash payments",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Mpesa_Payment",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Mpesa_Payment(models.Model):\n    sale = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    code = models.CharField(max_length=254,null=True)\n    amount = models.IntegerField(default=0)\n    date = models.DateTimeField(auto_now_add=True)\nclass Cash_Payment(models.Model):\n    sale = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    amount = models.IntegerField(default=0)\n    date = models.DateTimeField(auto_now_add=True)\nclass Credit(models.Model):",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cash_Payment",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Cash_Payment(models.Model):\n    sale = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    amount = models.IntegerField(default=0)\n    date = models.DateTimeField(auto_now_add=True)\nclass Credit(models.Model):\n    code = models.CharField(max_length = 20,default = None,null=True)\n    sale = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    amount = models.IntegerField(default=0)\n    total_amount = models.IntegerField(default = 0)\n    paid = models.BooleanField(default = False)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Credit",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Credit(models.Model):\n    code = models.CharField(max_length = 20,default = None,null=True)\n    sale = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    amount = models.IntegerField(default=0)\n    total_amount = models.IntegerField(default = 0)\n    paid = models.BooleanField(default = False)\n    customer= models.ForeignKey(Customer,on_delete=models.CASCADE)\nclass salesItems(models.Model):\n    sale_id = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    product_id = models.ForeignKey(Products,on_delete=models.CASCADE)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "salesItems",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class salesItems(models.Model):\n    sale_id = models.ForeignKey(Sales,on_delete=models.CASCADE)\n    product_id = models.ForeignKey(Products,on_delete=models.CASCADE)\n    price = models.FloatField(default=0)\n    qty = models.FloatField(default=0)\n    total = models.FloatField(default=0)\nclass RoleCategory(models.Model):\n    name = models.CharField(max_length = 254)\nclass Role(models.Model):\n    name = models.CharField(max_length = 254)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "RoleCategory",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class RoleCategory(models.Model):\n    name = models.CharField(max_length = 254)\nclass Role(models.Model):\n    name = models.CharField(max_length = 254)\n    description = models.CharField(max_length= 1000)\n    category = models.ForeignKey(RoleCategory,on_delete=models.CASCADE)\nclass UserGroup(models.Model):\n    name = models.CharField(max_length = 254)\n    description = models.CharField(max_length = 1000,default=None,null=True)\n    roles = models.ManyToManyField(Role)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class Role(models.Model):\n    name = models.CharField(max_length = 254)\n    description = models.CharField(max_length= 1000)\n    category = models.ForeignKey(RoleCategory,on_delete=models.CASCADE)\nclass UserGroup(models.Model):\n    name = models.CharField(max_length = 254)\n    description = models.CharField(max_length = 1000,default=None,null=True)\n    roles = models.ManyToManyField(Role)\nclass CustomUser(AbstractUser):\n    group = models.ForeignKey(UserGroup, default=None,on_delete = models.SET_NULL,null=True,)",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserGroup",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class UserGroup(models.Model):\n    name = models.CharField(max_length = 254)\n    description = models.CharField(max_length = 1000,default=None,null=True)\n    roles = models.ManyToManyField(Role)\nclass CustomUser(AbstractUser):\n    group = models.ForeignKey(UserGroup, default=None,on_delete = models.SET_NULL,null=True,)\n    name = models.CharField(max_length = 254)\n    roles = models.ManyToManyField(Role, related_name='users', blank=True)\n    phone = models.CharField(max_length = 50)\n    plainpassword = models.CharField(max_length = 254,default=\"null\") ",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "posApp.models",
+        "description": "posApp.models",
+        "peekOfCode": "class CustomUser(AbstractUser):\n    group = models.ForeignKey(UserGroup, default=None,on_delete = models.SET_NULL,null=True,)\n    name = models.CharField(max_length = 254)\n    roles = models.ManyToManyField(Role, related_name='users', blank=True)\n    phone = models.CharField(max_length = 50)\n    plainpassword = models.CharField(max_length = 254,default=\"null\") \n    def has_role(self, role_name):\n        return self.roles.filter(name=role_name).exists()\n    def has_group(self, group_name):\n        return self.groups.filter(name=group_name).exists()",
+        "detail": "posApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "posApp.urls",
+        "description": "posApp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('redirect-admin', RedirectView.as_view(url=\"/admin\"),name=\"redirect-admin\"),\n    path('', views.home, name=\"home-page\"),\n    path('test', views.test, name=\"test-page\"),\n    #Authentications\n    path('login', auth_views.LoginView.as_view(template_name = 'posApp/login.html',redirect_authenticated_user=True), name=\"login\"),\n    path('userlogin', views.login_user, name=\"login-user\"),\n    path('logout', views.logoutuser, name=\"logout\"),\n    #Categories\n    path('category', views.category, name=\"category-page\"),",
+        "detail": "posApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "SalesMethods",
+        "kind": 6,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "class SalesMethods:\n    @staticmethod\n    def all():\n        # Order sales by largest ID first\n        sales = Sales.objects.all().order_by(\"-id\")\n        sale_data = []\n        for sale in sales:\n            data = {}\n            for field in sale._meta.get_fields(include_parents=False):\n                if field.related_model is None:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_user",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def login_user(request):\n    logout(request)\n    resp = {\"status\":'failed','msg':''}\n    username = ''\n    password = ''\n    if request.POST:\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(username=username, password=password)\n        if user is not None:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "logoutuser",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def logoutuser(request):\n    logout(request)\n    return redirect('/')\n#users\n@login_required\ndef users(request):\n    if has_role(request,'Can view users'):\n        return render(request,\"posApp/users.html\",{\"users\":CustomUser.objects.all()})\n    else:\n        return redirect(\"home-page\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def users(request):\n    if has_role(request,'Can view users'):\n        return render(request,\"posApp/users.html\",{\"users\":CustomUser.objects.all()})\n    else:\n        return redirect(\"home-page\")\n@login_required\ndef manage_users(request):\n    user = {}\n    if request.method == 'GET':\n        data = request.GET",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_users",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_users(request):\n    user = {}\n    if request.method == 'GET':\n        data = request.GET\n        id = ''\n        if 'id' in data:\n            id = data['id']\n        if id.isnumeric() and int(id) > 0:\n            user = CustomUser.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_user",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_user(request):\n    data = request.POST\n    resp = {'status': 'failed'}\n    id = ''\n    if 'id' in data:\n        id = data['id']\n    try:\n        if id.isnumeric() and int(id) > 0:\n            user = CustomUser.objects.get(id=id)\n            if data[\"username\"] == \"admin\" and user.username != \"admin\":",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_roles",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def user_roles(request):\n    resp = {'status': ''}\n    if request.method == 'POST':\n        data = json.loads(request.body)\n        role_ids = data.get('roles', [])\n        user = CustomUser.objects.get(id=data.get(\"user\")) \n        roles = Role.objects.filter(id__in=role_ids)\n        # Clear old roles and assign new ones\n        user.roles.set(roles)\n        try:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_user",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_user(request):\n    data = request.POST\n    resp = {'status': ''}\n    try:\n        CustomUser.objects.filter(id=data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'User Successfully deleted.')\n    except Exception as e:\n        resp['msg'] = str(e)\n        resp['status'] = 'failed'",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "has_role",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def has_role(request,role):\n    try:\n        role = Role.objects.get(name = role)\n        user = request.user\n        if role in user.roles.all():\n            print(\"Found\")\n            return True\n        else:\n            print(\"Not Found\")\n            return False",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "groups",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def groups(request):\n    return render(request,\"posApp/groups.html\",{\"groups\":UserGroup.objects.all()})\n@login_required\ndef manage_groups(request):\n    group = {}\n    if request.method == 'GET':\n        data = request.GET\n        id = ''\n        if 'id' in data:\n            id = data['id']",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_groups",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_groups(request):\n    group = {}\n    if request.method == 'GET':\n        data = request.GET\n        id = ''\n        if 'id' in data:\n            id = data['id']\n        if id.isnumeric() and int(id) > 0:\n            group = UserGroup.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_group",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_group(request):\n    data = request.POST\n    resp = {'status': 'failed'}\n    id = ''\n    if 'id' in data:\n        id = data['id']\n    try:\n        if id.isnumeric() and int(id) > 0:\n            group = UserGroup.objects.get(id=id)\n            # Update group fields",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "group_roles",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def group_roles(request):\n    data = request.GET\n    if request.method == 'POST':\n        data = json.loads(request.body)\n        role_ids = data.get('roles', [])\n        print(data.get(\"group\"))\n        # Assuming you want to assign the roles to a group\n        group = UserGroup.objects.get(id=data.get(\"group\")) \n        roles = Role.objects.filter(id__in=role_ids)\n        # Clear old roles and assign new ones",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_group",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_group(request):\n    data = request.POST\n    resp = {'status': ''}\n    try:\n        UserGroup.objects.filter(id=data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Group Successfully deleted.')\n    except Exception as e:\n        resp['msg'] = str(e)\n        resp['status'] = 'failed'",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def home(request):\n    now = datetime.now()\n    current_year = now.strftime(\"%Y\")\n    current_month = now.strftime(\"%m\")\n    current_day = now.strftime(\"%d\")\n    categories = len(Category.objects.all())\n    products = len(Products.objects.all())\n    transaction = len(Sales.objects.filter(\n        date_added__year=current_year,\n        date_added__month = current_month,",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def about(request):\n    context = {\n        'page_title':'About',\n    }\n    return render(request, 'posApp/about.html',context)\n#Unit of measurement\n@login_required\ndef uom(request):\n    uom_list =Uom.objects.all()\n    # category_list = {}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "uom",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def uom(request):\n    uom_list =Uom.objects.all()\n    # category_list = {}\n    context = {\n        'page_title':'UOM',\n        'uom':uom_list,\n    }\n    return render(request, 'posApp/uom.html',context)\n@login_required\ndef manage_uom(request):",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_uom",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_uom(request):\n    uom = {}\n    if request.method == 'GET':\n        data =  request.GET\n        id = ''\n        if 'id' in data:\n            id= data['id']\n        if id.isnumeric() and int(id) > 0:\n            uom = Uom.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_uom",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_uom(request):\n    data =  request.POST\n    resp = {'status':'failed'}\n    try:\n        if (data['id']).isnumeric() and int(data['id']) > 0 :\n            save_uom = Uom.objects.filter(id = data['id']).update(name=data['name'], shortname=data['shortname'],description = data['description'],)\n        else:\n            save_uom = Uom(name=data['name'], description = data['description'],shortname=data['shortname'])\n            save_uom.save()\n        resp['status'] = 'success'",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_uom",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_uom(request):\n    data =  request.POST\n    resp = {'status':''}\n    try:\n        Uom.objects.filter(id = data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Uom Successfully deleted.')\n    except:\n        resp['status'] = 'failed'\n    return HttpResponse(json.dumps(resp), content_type=\"application/json\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "category",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def category(request):\n    category_list = Category.objects.all()\n    # category_list = {}\n    context = {\n        'page_title':'Category List',\n        'category':category_list,\n    }\n    return render(request, 'posApp/category.html',context)\n@login_required\ndef manage_category(request):",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_category",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_category(request):\n    category = {}\n    if request.method == 'GET':\n        data =  request.GET\n        id = ''\n        if 'id' in data:\n            id= data['id']\n        if id.isnumeric() and int(id) > 0:\n            category = Category.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_category",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_category(request):\n    data =  request.POST\n    resp = {'status':'failed'}\n    try:\n        if (data['id']).isnumeric() and int(data['id']) > 0 :\n            save_category = Category.objects.filter(id = data['id']).update(name=data['name'], description = data['description'],status = data['status'])\n        else:\n            save_category = Category(name=data['name'], description = data['description'],status = data['status'])\n            save_category.save()\n        resp['status'] = 'success'",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_category",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_category(request):\n    data =  request.POST\n    resp = {'status':''}\n    try:\n        Category.objects.filter(id = data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Category Successfully deleted.')\n    except:\n        resp['status'] = 'failed'\n    return HttpResponse(json.dumps(resp), content_type=\"application/json\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def products(request):\n    product_list = Products.objects.all()\n    context = {\n        'page_title':'Product List',\n        'products':product_list,\n    }\n    return render(request, 'posApp/products.html',context)\n@login_required\ndef low_stock(request):\n    low_stock_products = Products.objects.filter(quantity__lt=F('reorder'))",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "low_stock",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def low_stock(request):\n    low_stock_products = Products.objects.filter(quantity__lt=F('reorder'))\n    context = {\n        'page_title':'Product List',\n        'products':low_stock_products,\n    }\n    return render(request, 'posApp/products.html',context)\n@login_required\ndef manage_products(request):\n    product = {}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_products",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_products(request):\n    product = {}\n    categories = Category.objects.filter(status = 1).all()\n    if request.method == 'GET':\n        data =  request.GET\n        id = ''\n        if 'id' in data:\n            id= data['id']\n        if id.isnumeric() and int(id) > 0:\n            product = Products.objects.filter(id=id).first()",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def test(request):\n    categories = Category.objects.all()\n    context = {\n        'categories' : categories\n    }\n    return render(request, 'posApp/test.html',context)\n@login_required\ndef save_product(request):\n    data = request.POST\n    resp = {'status': 'failed'}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_product",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_product(request):\n    data = request.POST\n    resp = {'status': 'failed'}\n    id = ''\n    if 'id' in data:\n        id = data['id']\n    if id.isnumeric() and int(id) > 0:\n        check = Products.objects.exclude(id=id).filter(code=data['code']).all()\n    else:\n        check = Products.objects.filter(code=data['code']).all()",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_product",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_product(request):\n    data =  request.POST\n    resp = {'status':''}\n    try:\n        Products.objects.filter(id = data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Product Successfully deleted.')\n    except:\n        resp['status'] = 'failed'\n    return HttpResponse(json.dumps(resp), content_type=\"application/json\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "customers",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def customers(request):\n    customer_list = Customer.objects.exclude(default=True)\n    context = {\n        'page_title':'Customer List',\n        'customers':customer_list,\n    }\n    return render(request, 'posApp/customers.html',context)\n@login_required\ndef manage_customers(request):\n    customer = {}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_customers",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_customers(request):\n    customer = {}\n    if request.method == 'GET':\n        data =  request.GET\n        id = ''\n        if 'id' in data:\n            id= data['id']\n        if id.isnumeric() and int(id) > 0:\n            customer = Customer.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_customer",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_customer(request):\n    data = request.POST\n    resp = {'status': 'failed'}\n    id = ''\n    if 'id' in data:\n        id = data['id']\n    if data[\"name\"]==\"Walk in Customer\":\n        resp['msg'] = \"You cannot create a customer with this name\"\n    else:\n        try:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_customer",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_customer(request):\n    data =  request.POST\n    resp = {'status':''}\n    try:\n        Customer.objects.filter(id = data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Customer Successfully deleted.')\n    except:\n        resp['status'] = 'failed'\n    return HttpResponse(json.dumps(resp), content_type=\"application/json\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "suppliers",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def suppliers(request):\n    supplier_list = Supplier.objects.all()\n    context = {\n        'page_title':'Customer List',\n        'suppliers':supplier_list,\n    }\n    return render(request, 'posApp/suppliers.html',context)\n@login_required\ndef manage_suppliers(request):\n    customer = {}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "manage_suppliers",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def manage_suppliers(request):\n    customer = {}\n    if request.method == 'GET':\n        data =  request.GET\n        id = ''\n        if 'id' in data:\n            id= data['id']\n        if id.isnumeric() and int(id) > 0:\n            customer = Supplier.objects.filter(id=id).first()\n    context = {",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_supplier",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_supplier(request):\n    data = request.POST\n    resp = {'status': 'failed'}\n    id = data['id']\n    try:\n        if id.isnumeric() and int(id) > 0:\n            Supplier.objects.filter(id=id).update(\n                name = data['name'],\n                contact_person = data['contact_person'],\n                location = data[\"location\"],",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_supplier",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_supplier(request):\n    data =  request.POST\n    resp = {'status':''}\n    try:\n        Supplier.objects.filter(id = data['id']).delete()\n        resp['status'] = 'success'\n        messages.success(request, 'Supplier Successfully deleted.')\n    except:\n        resp['status'] = 'failed'\n    return HttpResponse(json.dumps(resp), content_type=\"application/json\")",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "pos",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def pos(request):\n    products = Products.objects.filter(status = 1)\n    customer_list = Customer.objects.exclude(default=True)\n    product_json = []\n    for product in products:\n        product_json.append({'id':product.id, 'name':product.name, 'price':float(product.price)})\n    context = {\n        'page_title' : \"Point of Sale\",\n        'products' : products,\n        'product_json' : json.dumps(product_json),",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "checkout_modal",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def checkout_modal(request):\n    grand_total = 0\n    if 'grand_total' in request.GET:\n        grand_total = request.GET['grand_total']\n    context = {\n        'grand_total' : grand_total,\n    }\n    return render(request, 'posApp/checkout.html',context)\n@login_required\ndef save_pos(request):",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "save_pos",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def save_pos(request):\n    resp = {'status': 'failed', 'msg': ''}\n    data = request.POST\n    try:\n        # Generating a unique code for the sale\n        pref = timezone.now().year\n        i = 1\n        while True:\n            code = '{:0>5}'.format(i)\n            i += 1",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "createcredit",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def createcredit(sale,amount,customer):\n    pref = timezone.now().year\n    i = 1\n    code=0\n    while True:\n        code = '{:0>5}'.format(i)\n        i += 1\n        if not Sales.objects.filter(code=str(pref) + str(code)).exists():\n            break\n    Credit.objects.create(code = code,sale = sale,amount= amount, customer = customer)",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "create_cash_payment",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def create_cash_payment(sale,amount):\n    Cash_Payment.objects.create(amount = amount,sale=sale)\n#Function to create a mpesa payment instance for a sale\ndef create_mpesa_payment(sale,amount):\n    Mpesa_Payment.objects.create(amount = amount,sale=sale)\n#Fuction to get or create a customer for a sale \ndef get_pos_customer(customer):\n    if customer.isnumeric() and int(customer) > 0:\n        try:\n            # Fetch customer by ID",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "create_mpesa_payment",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def create_mpesa_payment(sale,amount):\n    Mpesa_Payment.objects.create(amount = amount,sale=sale)\n#Fuction to get or create a customer for a sale \ndef get_pos_customer(customer):\n    if customer.isnumeric() and int(customer) > 0:\n        try:\n            # Fetch customer by ID\n            customer = Customer.objects.get(id=customer)\n            return customer\n        except Customer.DoesNotExist:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_pos_customer",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def get_pos_customer(customer):\n    if customer.isnumeric() and int(customer) > 0:\n        try:\n            # Fetch customer by ID\n            customer = Customer.objects.get(id=customer)\n            return customer\n        except Customer.DoesNotExist:\n             # Attempt to fetch the first \"Walk in Customer\" with default=True\n            customer = Customer.objects.filter(name=\"Walk in Customer\", default=True).first()\n            if not customer:",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "salesList",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def salesList(request):\n    sales = SalesMethods()\n    context = {}\n    if \"fromdate\" in request.GET and \"todate\" in request.GET:\n        from_date = request.GET.get(\"fromdate\")\n        to_date = request.GET.get(\"todate\")\n        context = sales.dateperiod(from_date, to_date)\n    else:\n        context = sales.all()\n    return render(request, 'posApp/sales.html', context)",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "saledetails",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def saledetails(request):\n    if \"id\" in request.GET:\n        sales = SalesMethods()\n        context = sales.saledetails(request.GET.get('id'))\n        if context != []:\n            return render(request, 'posApp/saledetails.html',context)\n        else:\n            return redirect('sales-page')\n@login_required\ndef receipt(request):",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "receipt",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def receipt(request):\n    id = request.GET.get('id')\n    sales = Sales.objects.filter(id = id).first()\n    transaction = {}\n    for field in Sales._meta.get_fields():\n        if field.related_model is None:\n            transaction[field.name] = getattr(sales,field.name)\n    if 'tax_amount' in transaction:\n        transaction['tax_amount'] = format(float(transaction['tax_amount']))\n    ItemList = salesItems.objects.filter(sale_id = sales).all()",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "invoice",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def invoice(request):\n    id = request.GET.get('id')\n    sales = Sales.objects.filter(id = id).first()\n    transaction = {}\n    for field in Sales._meta.get_fields():\n        if field.related_model is None:\n            transaction[field.name] = getattr(sales,field.name)\n    if 'tax_amount' in transaction:\n        transaction['tax_amount'] = format(float(transaction['tax_amount']))\n    ItemList = salesItems.objects.filter(sale_id = sales).all()",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_sale",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def delete_sale(request):\n    resp = {'status':'failed', 'msg':''}\n    id = request.POST.get('id')\n    if has_role(request, 'Delete sales'):\n        try:\n            delete = Sales.objects.filter(id = id).delete()\n            resp['status'] = 'success'\n            messages.success(request, 'Sale Record has been deleted.')\n        except:\n            resp['msg'] = \"An error occured\"",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "check_product_quantity",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def check_product_quantity(request):\n    product_id = request.GET.get('product_id')\n    quantity = int(request.GET.get('quantity'))\n    try:\n        product = Products.objects.get(id=product_id)\n        if product.quantity >= quantity:\n            response = {\n                'status': 'success',\n                'product': {\n                    'id': product.id,",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "credit",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def credit(request):\n    credits = Credit.objects.filter(paid = False)\n    context = {\n        \"credits\":credits,\n        \"total\":sum(credit.amount for credit in credits)\n    }\n    return render(request, \"posApp/credit.html\",context)\n@login_required\ndef paycredit(request):\n    resp = {'status':'failed', 'msg':''}",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "paycredit",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def paycredit(request):\n    resp = {'status':'failed', 'msg':''}\n    amount = request.POST.get('amount')\n    credit = request.POST.get('id')\n    method = request.POST.get('method')\n# try:\n    credit = Credit.objects.get(id = credit)\n    sale = credit.sale\n    if method == 'cash':\n        Cash_Payment.objects.create(amount = amount,sale = sale)",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "todays_transactions_count",
+        "kind": 2,
+        "importPath": "posApp.views",
+        "description": "posApp.views",
+        "peekOfCode": "def todays_transactions_count(request):\n    # Get the current date\n    today = timezone.now().date()\n    # Filter Sales to only include today's transactions\n    todays_sales_count = Sales.objects.filter(date_added__date=today).count()\n    # Return the count as JSON\n    return JsonResponse({'transaction_count': todays_sales_count})",
+        "detail": "posApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pos.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

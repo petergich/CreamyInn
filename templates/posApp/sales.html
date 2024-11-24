@@ -1,0 +1,186 @@
+{% extends "posApp/base.html" %} {% load humanize %} {% block pageContent %}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0"><i class="fas fa-receipt text-primary"></i> Sales List</h4>
+            <div class="d-flex">
+            <div class="form-group mr-2">
+                <label for="fromdate" class="control-label text-primary"><i class="fas fa-calendar"></i> From:</label>
+                <input type="date" name="fromdate" id="fromdate" class="form-control form-control-sm rounded-0" value="{{ from }}" onchange="toggleApplyButton()">
+            </div>
+            <div class="form-group mr-2">
+                <label for="todate" class="control-label text-primary"><i class="fas fa-calendar"></i> To:</label>
+                <input type="date" name="todate" id="todate" class="form-control form-control-sm rounded-0" value="{{ to }}" onchange="toggleApplyButton()">
+            </div>
+        </div>
+            <button id="applyButton" class="btn btn-primary p-1" style="display: none;"onclick="applyDateChanges()">Apply</button>
+        </div>
+    </div>
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card">
+        <div class="table-responsive">
+            <table class="table table-secondary" id="dataTable">
+                <colgroup>
+    <col width="5%">
+    <col width="15%">
+    <col width="15%">
+    <col width="15%">
+    <col width="10%">
+    <col width="10%">
+    <col width="10%">
+    <col width="10%">
+    <col width="10%">
+    <col width="5%">
+    <col width="5%">
+</colgroup>
+<thead class="table-primary">
+    <tr>
+        <th class="text-center py-1">#</th>
+        <th class="text-center py-1"><i class="fas fa-calendar-alt"></i> DateTime</th>
+        <th class="text-center py-1">Trans. Code</th>
+        <th class="text-center py-1"><i class="fas fa-user"></i> Customer</th>
+        <th class="text-center py-1">Cash</th>
+        <th class="text-center py-1">Mpesa</th>
+        <th class="text-center py-1">Credit</th>
+        <th class="text-center py-1">Total</th>
+        <th class="text-center py-1">Tax Inclusive</th>
+        <th class="text-center py-1">Items</th>
+        <th class="text-center py-1">Action</th>
+    </tr>
+</thead>
+
+                <tbody>
+                    {% for sale in sale_data %}
+                    <tr>
+                        <td class="px-2 py-1 text-center"><a href = '{% url 'saledetails'%}?id={{sale.id}}'><i class="fas fa-tag"></i>{{ sale.id }}</a></td>
+                        <td class="px-2 py-1 text-start"><i class="fas fa-calendar-alt"></i> {{ sale.date_added|date:'Y-m-d H:i' }}</td>
+                        <td class="px-2 py-1 text-start"><a href = '{% url 'saledetails'%}?id={{sale.id}}'>{{ sale.code }} <i class = 'fas fa-eye'></i></a></td>
+                        <td class="px-2 py-1 text-start"><i class="fas fa-user"></i>  {{ sale.customer.name }}</td>
+                        <td class="px-2 py-1 text-start">KSH {{ sale.cash|intcomma }}</td>
+                        <td class="px-2 py-1 text-start">KSH {{ sale.mpesa|intcomma }}</td>
+                        <td class="px-2 py-1 text-start">KSH {{ sale.credit|intcomma }}</td>
+                        <td class="px-2 py-1 text-start">KSH {{ sale.grand_total|intcomma }}</td>
+                        <td class="px-2 py-1 text-start">({{ sale.tax }}%) {{ sale.tax_amount|intcomma:2 }}</td>
+                        <td class="px-2 py-1 text-center">{{ sale.item_count|intcomma }}</td>
+                        <td class="px-2 py-1 text-center">
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--light mdc-ripple-upgraded view-data" type="button" data-id="{{ sale.id }}" title="View Receipt">
+                                <i class="material-icons mdc-button__icon">receipt</i>
+                            </button>
+                            <button class="mdc-button mdc-button--raised p-1 icon-button filled-button--danger mdc-ripple-upgraded delete-data" type="button" data-id="{{ sale.id }}" data-code="{{ sale.code }}" title="Delete">
+                                <i class="material-icons mdc-button__icon">deleteoutline</i>
+                            </button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+    <table class="table">
+        <colgroup>
+    <col width="10%">
+    <col width="0%">
+    <col width="10%">
+    <col width="0%">
+    <col width="15%">
+    <col width="15%">
+    <col width="15%">
+    <col width="15%">
+    <col width="0%">
+    <col width="15%">
+    <col width="0%">
+        </colgroup>
+        <thead class="table-dark">
+            <tr>
+                <th class="text-center text-white text-bold py-1">TOTALS:</th>
+                <th class="text-center py-1"></th>
+                <th class="text-center text-white py-1">SALES: {{total_sales}}</th>
+                <th class="text-center py-1"></th>
+                <th class="text-center text-start text-white py-1">CASH: KSH: {{total_cash}}</th>
+                <th class="text-center text-start text-white py-1">MPESA: KSH: {{total_mpesa}}</th>
+                <th class="text-center text-start text-white py-1">CREDIT: KSH: {{total_credit}}</th>
+                <th class="text-center text-start text-white py-1">TOTAL: KSH: {{total_amount}}</th>
+                <th class="text-center py-1"></th>
+                <th class="text-center text-white py-1">ITEMS: {{total_items}}</th>
+                <th class="text-center py-1"></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+    </div>
+</div>
+{% endblock pageContent %} {% block ScriptBlock %}
+<script>
+    const initialFromDate = document.getElementById('fromdate').value;
+    const initialToDate = document.getElementById('todate').value;
+
+    function toggleApplyButton() {
+        const currentFromDate = document.getElementById('fromdate').value;
+        const currentToDate = document.getElementById('todate').value;
+        const applyButton = document.getElementById('applyButton');
+
+        // Show the button if either date has been changed from its initial value
+        if (currentFromDate !== initialFromDate || currentToDate !== initialToDate) {
+            applyButton.style.display = 'block';
+        } else {
+            applyButton.style.display = 'none';
+        }
+    }
+     function applyDateChanges() {
+        // Get the selected dates
+        const fromDate = new Date(document.getElementById('fromdate').value);
+        const toDate = new Date(document.getElementById('todate').value);
+
+        // Validate the date range
+        if (fromDate > toDate) {
+            alert("The 'From' date must be earlier than the 'To' date.");
+            return; // Prevent redirection if the validation fails
+        }
+
+        // Construct the URL for the sales page with the selected dates as parameters
+        const url = "{% url 'sales-page' %}?fromdate=" + document.getElementById('fromdate').value + "&todate=" + document.getElementById('todate').value;
+
+        // Redirect to the constructed URL
+        window.location.href = url;
+    }
+    $(function() {
+        $('.view-data').click(function() {
+            uni_modal("Transaction's Receipt", "{% url 'receipt-modal' %}?id=" + $(this).attr('data-id'))
+        })
+        $('.delete-data').click(function() {
+            _conf("Are you sure to delete <b>" + $(this).attr('data-code') + "</b> Transaction record?", "delete_sale", [$(this).attr('data-id')])
+        })
+
+    })
+    
+    function delete_sale($id) {
+        start_loader();
+        $.ajax({
+            headers: {
+                "X-CSRFToken": '{{csrf_token}}'
+            },
+            url: "{% url 'delete-sale' %}",
+            method: "POST",
+            data: {
+                id: $id
+            },
+            dataType: "json",
+            error: err => {
+                console.log(err)
+                alert_toast("An error occured.", 'error');
+                end_loader();
+            },
+            success: function(resp) {
+                if (typeof resp == 'object' && resp.status == 'success') {
+                    location.reload();
+                } else {
+                    alert_toast("An error occured.", 'error');
+                    end_loader();
+                }
+            }
+        })
+    }
+</script>
+{% endblock ScriptBlock %}

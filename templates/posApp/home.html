@@ -1,0 +1,72 @@
+{% extends "posApp/base.html" %} {% load humanize %} {% block pageContent %}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <div class="mdc-card">
+        <div class="d-flex justify-content-center">
+        <i class="fa fa-ice-cream xx text-primary"></i>
+            <h4 class="card-title mb-0 text-primary text-center"> CREAMY INN Inventory</h4>
+        </div>
+    </div>
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+    <hr class="w-100">
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-3-tablet">
+    <div class="mdc-card info-card info-card--success" onclick="redirectToCategoryPage()">
+        <div class="card-inner">
+
+            <h5 class="card-title">Cream Categories</h5>
+            <h5 class="font-weight-light pb-2 mb-1 border-bottom">{{ categories|intcomma }}</h5>
+            <p class="tx-12 text-muted">Over All Count of Categories</p>
+        
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-3-tablet">
+    <div class="mdc-card info-card info-card--success" onclick="redirectToProductPage()">
+        <div class="card-inner">
+            <h5 class="text-pink card-title ">All Cream Products</h5>
+            <h5 class="font-weight-light pb-2 mb-1 border-bottom">{{ products|intcomma }}</h5>
+            <p class="tx-12 text-muted">Over All Count of Products</p>
+            
+        </div>
+    </div>
+</div>
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-3-tablet">
+    <div class="mdc-card info-card info-card--success" onclick="todaysales()">
+        <div class="card-inner">
+            <h5 class="card-title">Today's Sales</h5>
+            <h5 class="font-weight-light pb-2 mb-1 border-bottom">{{ total_sales|intcomma }}</h5>
+            <p class="tx-12 text-muted">Total Sales Today</p>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function redirectToCategoryPage() {
+        window.location.href = "{% url 'category-page' %}";
+    }
+    function redirectToProductPage() {
+        window.location.href = "{% url 'product-page' %}";
+    }
+    
+
+
+
+    $(document).ready(function() {
+            $.ajax({
+                url: '{% url "todays-transactions-count" %}',
+                type: 'GET',
+                success: function(data) {
+                    $('#transaction-count').text(data.transaction_count.toLocaleString());
+                },
+                error: function(error) {
+                    console.error('Error fetching transaction count:', error);
+                }
+            });
+        });
+</script>
+{% endblock pageContent %}
