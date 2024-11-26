@@ -1,11 +1,19 @@
-import os
-import django
 
-# Set up Django environment to access models
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pos.settings')
-django.setup()
 
+
+# Import models
+from django.core.management.base import BaseCommand
 from posApp.models import Role, RoleCategory, CustomUser
+
+class Command(BaseCommand):
+    help = 'Populates roles and categories'
+
+    def handle(self, *args, **kwargs):
+        # Copy your `create_roles_and_categories` logic here
+        print("Populating roles and categories...")
+        create_roles_and_categories()
+
+        print("Done.")
 
 def create_roles_and_categories():
     print("Started Creating Roles and Categories")
@@ -53,31 +61,34 @@ def create_roles_and_categories():
             Role.objects.get_or_create(name=role_name, category=category)
 
     print("Roles and categories populated successfully.")
-
-    # Now create the superuser and assign all roles
     create_admin_user()
+
 
 def create_admin_user():
     print("Started Creating Admin User")
 
     # Check if admin user already exists
     if not CustomUser.objects.filter(username='admin').exists():
-        # Create superuser with username 'admin' and password 'admin'
-        admin_user = CustomUser.objects.create_superuser(username='admin', password='admin', email='admin@example.com')
+        admin_user = CustomUser.objects.create_superuser(
+            username='admin',
+            password='admin',
+            email='admin@example.com'
+        )
 
-        # Assign all roles to the superuser (assuming roles can be related to users)
-        roles = Role.objects.all()  # Fetch all roles
-
+        # Assign all roles to the admin user
+        roles = Role.objects.all()
         admin_user.roles.set(roles)
         admin_user.save()
-        print(f"Superuser 'admin' created with all roles.")
+        print("Superuser 'admin' created with all roles.")
     else:
+        print("Admin user already exists.")
         admin_user = CustomUser.objects.get(username='admin')
-        # Assign all roles to the superuser (assuming roles can be related to users)
-        roles = Role.objects.all()  # Fetch all roles
 
+        # Ensure admin has all roles
+        roles = Role.objects.all()
         admin_user.roles.set(roles)
         admin_user.save()
-        print("Admin user has been assigned all roles")
+        print("Admin user has been assigned all roles.")
 
-create_roles_and_categories()
+# Call the function directly
+
